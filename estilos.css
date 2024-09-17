@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+.sidebar {
+    width: 250px; 
+    background-color: #dfdfdf; 
+    color: #333; 
+    height: 100vh; 
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+    position: fixed; 
+    left: -250px;
+    top: 0;
+    transition: transform 0.3s ease; 
+    z-index: 1; 
+    transition: left 0.3s ease; 
+}
+
+.sidebar.open {
+    left: 0; /* Muestra el sidebar */
+}
+
+
+.sidebar.hidden {
+    transform: translateX(-100%); 
+}
+
+.sidebar h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 100px;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-item h2 {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.menu-item h2 i {
+    margin-right: 15px; 
+    font-size: 16px; 
+    color: #333;
+}
+
+.menu-item h2:hover {
+    background-color: #555;
+    color: #fff; 
+}
+
+.submenu {
+    display: none;
+    padding-left: 20px;
+    background-color: #e0e0e0; 
+}
+
+.submenu a {
+    color: #333; 
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submenu a:hover {
+    background-color: #ddd;
+}
+
+
+.main-container {
+    margin-left: 250px; 
+    width: calc(100% - 250px);
+    height: 100vh; 
+    position: relative;
+}
+
+.main-container.shift {
+    margin-left: 250px; /* Ajusta el contenido principal para hacer espacio para el sidebar */
+    transition: margin-left 0.3s ease; /* Transición suave */
+}
+
+.toggle-bar {
+    position: absolute;
+    top: 0;
+    left: 30px;  
+    width: 1620px; 
+    background-color: #0612b9; 
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    align-items: center; 
+    z-index: 2; 
+}
+
+.toggle-btn {
+    background-color: #fff;
+    color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #e2e2e2; 
+}
+
+.user-name {
+    margin-left: 15px; 
+    color: #fff; 
+    font-size: 18px; 
+    font-weight: bold; 
+}
+
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 50px; 
+    margin-left: 0;
+}
+
+.content {
+    transition: margin-left 0.3s ease; /* Transición suave para el contenido */
+}
+

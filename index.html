@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNI-EARPFIM</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <img src="assets/uni-earpfim.jpg" alt="Logo de la Empresa">
+        <h1>UNI EARPFIM</h1>
+
+        <div class="menu-item">
+            <h2 onclick="toggleSubmenu(1)"><i class="fa-solid fa-briefcase"></i>General</h2>
+            <div class="submenu" id="submenu1">
+                <a href="#" onclick="loadContent('General/aula-virtual.html'); return false;"><i class="fas fa-wrench"></i>Aula Virtual FIM</a>
+                <a href="#" onclick="loadContent('General/horario_clases/horario.html'); return false;"><i class="fa-solid fa-pencil"></i>Mi horario de Clases</a>
+                <a href="#" onclick="loadContent('General/informacion-docente.html'); return false;"><i class="fa-solid fa-user"></i> Información Docente</a>
+                <a href="#" onclick="loadContent('General/MisCursosAsignados.html'); return false;"><i class="fa-solid fa-book"></i> Mis Cursos Asignados</a>
+                <a href="#" onclick="loadContent('General/TutoriaAlumnos.html'); return false;"><i class="fa-solid fa-file"></i> Tutoria Alumnos</a>
+                <a href="#" onclick="loadContent('General/asistencia/asistencia.html'); return false;"><i class="fa-solid fa-file"></i> Asistencia</a>
+                <a href="#" onclick="loadContent('General/CargarNotasORCE.html'); return false;"><i class="fa-solid fa-link"></i> Cargar Notas ORCE</a>
+                <a href="#" onclick="loadContent('General/BibliotecaVirtual.html'); return false;"><i class="fa-solid fa-book"></i> Biblioteca Virtual</a>
+                <a href="#" onclick="loadContent('General/MiDisponibilidad.html'); return false;"><i class="fa-solid fa-border-all"></i> Mi Disponibilidad</a>
+                <a href="#" onclick="loadContent('General/Reclamos.html'); return false;"><i class="fa-solid fa-bullhorn"></i> Reclamos</a>
+                <a href="#" onclick="loadContent('General/CorreccionNotas.html'); return false;"><i class="fa-solid fa-file-lines"></i> Corrección de Notas</a>
+                <a href="#" onclick="loadContent('General/AyudaEnAula.html'); return false;"><i class="fas fa-cogs"></i> Ayuda en Aula</a>
+                <a href="#" onclick="loadContent('General/AulaVirtualTitulacion.html'); return false;"><i class="fas fa-wrench"></i> Aula Virtual Titulación</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2 onclick="toggleSubmenu(2)"><i class="fa-solid fa-briefcase"></i>Administrador</h2>
+            <div class="submenu" id="submenu2">
+                <a href="#" onclick="loadContent('Administrador/Ejemplo1.html'); return false;">Ejemplo 1</a>
+                <a href="#" onclick="loadContent('Administrador/Ejemplo2.html'); return false;">Ejemplo 2</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2 onclick="toggleSubmenu(3)"><i class="fa-solid fa-briefcase"></i>Acreditación FIM</h2>
+            <div class="submenu" id="submenu3">
+                <a href="#" onclick="loadContent('AcreditacionFIM/FIM1.html'); return false;">FIM 1</a>
+                <a href="#" onclick="loadContent('AcreditacionFIM/FIM2.html'); return false;">FIM 2</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2 onclick="toggleSubmenu(4)"><i class="fa-solid fa-briefcase"></i>Virtual</h2>
+            <div class="submenu" id="submenu4">
+                <a href="#" onclick="loadContent('Virtual/Virtual1.html'); return false;">Virtual 1</a>
+                <a href="#" onclick="loadContent('Virtual/Virtual2.html'); return false;">Virtual 2</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2 onclick="toggleSubmenu(5)"><i class="fa-solid fa-briefcase"></i>Doc. Académicos</h2>
+            <div class="submenu" id="submenu5">
+                <a href="#" onclick="loadContent('DocAcademicos/Documentos1.html'); return false;">Documentos 1</a>
+                <a href="#" onclick="loadContent('DocAcademicos/Documentos2.html'); return false;">Documentos 2</a>
+            </div>
+        </div>
+
+    </div> 
+
+    <div class="main-container">
+        <div class="toggle-bar">
+            <button id="toggleSidebar" class="toggle-btn"><i class="fas fa-bars"></i></button>
+            <span class="user-name">OBREGON RAMOS, MAXIMO</span>
+        </div>
+
+    <div class="content" id="content">
+        <div id="content-placeholder">
+            <div id="bienvenida">
+                <h2>Bienvenido Obregón Ramos Máximo</h2>
+                <p>Selecciona un elemento del menú para ver el contenido.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>

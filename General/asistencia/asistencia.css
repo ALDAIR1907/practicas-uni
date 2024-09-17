@@ -1,0 +1,175 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.attendance-container {
+    max-width: 800px;
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto y otros elementos dentro del contenedor */
+}
+
+.attendance-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.section select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.section p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#hora-actual {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Estilos para los botones */
+button {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+#take-attendance {
+    background-color: #FFA500; 
+    color: white;
+}
+
+#take-attendance:hover {
+    background: linear-gradient(45deg, #FF8C00, #FFA500); 
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+     
+}
+
+#take-recovery {
+    background-color: #13099cea; /* Color naranja oscuro */
+    color: white;
+}
+
+#take-recovery:hover {
+    background: linear-gradient(45deg, #13099cea, #13099cea); 
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+/* Botones de estado */
+.status-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#punctual {
+    background-color: #13099cea; 
+}
+
+#punctual:hover {
+    background-color: #13099cea;
+}
+
+#late {
+    background-color: #13099cea; 
+}
+
+#late:hover {
+    background-color: #13099cea;
+}
+
+#absent {
+    background-color: #13099cea; 
+}
+
+#absent:hover {
+    background-color: #13099cea;
+}
+
+#nn {
+    background-color: #13099cea; 
+}
+
+#nn:hover {
+    background-color: #13099cea;
+}
+
+/* Estilos de la tabla */
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.attendance-table th, .attendance-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.attendance-table th {
+    background-color: #1607e4c0;
+    color: white;
+}
+
+/* Estilos de resúmenes */
+#monthly-summary, #semester-summary {
+    margin-top: 20px;
+}
+

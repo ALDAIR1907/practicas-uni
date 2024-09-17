@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcación de Asistencia</title>
+    <link rel="stylesheet" href="General/asistencia/asistencia.css">
+</head>
+<body>
+    <div class="container">
+        <div id="marcar-asistencia" class="attendance-container">
+            <h2>Registro de Asistencia</h2>
+            
+            <div class="section">
+                <label for="semester-select">Seleccionar Semestre:</label>
+                <select id="semester-select">
+                    <option value="2024-1">2024 - 1</option>
+                    <option value="2024-2">2024 - 2</option>
+                </select>
+            </div>
+            
+            <div class="section">
+                <p>Hora Actual: <span id="hora-actual">00:00</span></p>
+                <button id="mark-entry">Marcar Entrada</button>
+                <button id="mark-exit" disabled>Marcar Salida</button>
+            </div>
+            
+            <div class="section">
+                <button id="take-attendance">Tomar Asistencia Alumnos</button>
+                <button id="take-recovery">Solicitar Recuperación/Justificación</button>
+            </div>
+
+            <div class="section">
+                <button id="punctual" class="status-btn">P: Puntual</button>
+                <button id="late" class="status-btn">T: Tardanza</button>
+                <button id="absent" class="status-btn">F: Falta</button>
+                <button id="nn" class="status-btn">NN: NN</button>
+            </div>
+            
+            <button id="report">Generar Reporte</button>
+            
+            <div id="monthly-summary">
+                <h3>Resumen Mensual</h3>
+                <!-- Aquí se mostrarán los resúmenes mensuales -->
+            </div>
+            
+            <div id="semester-summary">
+                <h3>Resumen del Semestre</h3>
+                <!-- Aquí se mostrará el resumen del semestre -->
+            </div>
+            
+            <table class="attendance-table">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Hora de Entrada</th>
+                        <th>Hora de Salida</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="attendance-record">
+                    <!-- Aquí se añadirán las filas de asistencia -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="General/asistencia/asistencia.js"></script>
+</body>
+</html>
